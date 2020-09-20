@@ -1,0 +1,10 @@
+﻿@model Models.Photo
+
+@{
+    ViewData["Title"] = "Home Page";
+    var photoPath = Model.ImageUrl;
+}
+
+<div class="text-center">
+    <img class="card-img-top imageThumbnail" src="@photoPath" asp-append-version="true" />
+</div>
